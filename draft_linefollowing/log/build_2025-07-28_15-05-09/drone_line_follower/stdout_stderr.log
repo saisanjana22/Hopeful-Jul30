@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/drone_line_follower/drone_line_follower.egg-info
+writing ../../build/drone_line_follower/drone_line_follower.egg-info/PKG-INFO
+writing dependency_links to ../../build/drone_line_follower/drone_line_follower.egg-info/dependency_links.txt
+writing requirements to ../../build/drone_line_follower/drone_line_follower.egg-info/requires.txt
+writing top-level names to ../../build/drone_line_follower/drone_line_follower.egg-info/top_level.txt
+writing manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+reading manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+writing manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/bwsi/draft_linefollowing/build/drone_line_follower/build
+creating /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib
+creating /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+copying drone_line_follower/__init__.py -> /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+copying drone_line_follower/offboard_control_node.py -> /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+copying drone_line_follower/line_follower_node.py -> /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+running install
+running install_lib
+creating /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+copying /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower/__init__.py -> /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+copying /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower/offboard_control_node.py -> /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+copying /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower/line_follower_node.py -> /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+byte-compiling /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower/offboard_control_node.py to offboard_control_node.cpython-312.pyc
+byte-compiling /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower/line_follower_node.py to line_follower_node.cpython-312.pyc
+running install_data
+creating /home/bwsi/draft_linefollowing/install/drone_line_follower/share/ament_index
+creating /home/bwsi/draft_linefollowing/install/drone_line_follower/share/ament_index/resource_index
+creating /home/bwsi/draft_linefollowing/install/drone_line_follower/share/ament_index/resource_index/packages
+copying resource/drone_line_follower -> /home/bwsi/draft_linefollowing/install/drone_line_follower/share/ament_index/resource_index/packages
+copying package.xml -> /home/bwsi/draft_linefollowing/install/drone_line_follower/share/drone_line_follower
+running install_egg_info
+Copying ../../build/drone_line_follower/drone_line_follower.egg-info to /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/bwsi/draft_linefollowing/build/drone_line_follower/install.log'

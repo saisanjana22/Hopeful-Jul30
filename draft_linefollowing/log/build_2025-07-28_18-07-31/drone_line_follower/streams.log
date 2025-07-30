@@ -1,0 +1,25 @@
+[1.396s] Invoking command in '/home/bwsi/draft_linefollowing/src/drone_line_follower': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bwsi/draft_linefollowing/build/drone_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_line_follower build --build-base /home/bwsi/draft_linefollowing/build/drone_line_follower/build install --record /home/bwsi/draft_linefollowing/build/drone_line_follower/install.log --single-version-externally-managed install_data
+[1.878s] running egg_info
+[1.915s] writing ../../build/drone_line_follower/drone_line_follower.egg-info/PKG-INFO
+[1.916s] writing dependency_links to ../../build/drone_line_follower/drone_line_follower.egg-info/dependency_links.txt
+[1.916s] writing requirements to ../../build/drone_line_follower/drone_line_follower.egg-info/requires.txt
+[1.916s] writing top-level names to ../../build/drone_line_follower/drone_line_follower.egg-info/top_level.txt
+[1.993s] reading manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+[1.994s] writing manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+[1.994s] running build
+[1.994s] running build_py
+[1.995s] copying drone_line_follower/offboard_control_node.py -> /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+[1.995s] copying drone_line_follower/line_follower_node.py -> /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+[1.995s] running install
+[2.005s] running install_lib
+[2.043s] copying /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower/offboard_control_node.py -> /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+[2.044s] copying /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower/line_follower_node.py -> /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+[2.044s] byte-compiling /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower/offboard_control_node.py to offboard_control_node.cpython-312.pyc
+[2.045s] byte-compiling /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower/line_follower_node.py to line_follower_node.cpython-312.pyc
+[2.045s] running install_data
+[2.046s] running install_egg_info
+[2.090s] removing '/home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower-0.0.0-py3.12.egg-info' (and everything under it)
+[2.090s] Copying ../../build/drone_line_follower/drone_line_follower.egg-info to /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower-0.0.0-py3.12.egg-info
+[2.091s] running install_scripts
+[2.326s] writing list of installed files to '/home/bwsi/draft_linefollowing/build/drone_line_follower/install.log'
+[2.372s] Invoked command in '/home/bwsi/draft_linefollowing/src/drone_line_follower' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bwsi/draft_linefollowing/build/drone_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_line_follower build --build-base /home/bwsi/draft_linefollowing/build/drone_line_follower/build install --record /home/bwsi/draft_linefollowing/build/drone_line_follower/install.log --single-version-externally-managed install_data

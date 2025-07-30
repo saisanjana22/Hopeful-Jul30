@@ -1,0 +1,22 @@
+[0.796s] Invoking command in '/home/bwsi/draft_linefollowing/src/drone_line_follower': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bwsi/draft_linefollowing/build/drone_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_line_follower build --build-base /home/bwsi/draft_linefollowing/build/drone_line_follower/build install --record /home/bwsi/draft_linefollowing/build/drone_line_follower/install.log --single-version-externally-managed install_data
+[1.061s] running egg_info
+[1.081s] writing ../../build/drone_line_follower/drone_line_follower.egg-info/PKG-INFO
+[1.081s] writing dependency_links to ../../build/drone_line_follower/drone_line_follower.egg-info/dependency_links.txt
+[1.082s] writing requirements to ../../build/drone_line_follower/drone_line_follower.egg-info/requires.txt
+[1.082s] writing top-level names to ../../build/drone_line_follower/drone_line_follower.egg-info/top_level.txt
+[1.126s] reading manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+[1.127s] writing manifest file '../../build/drone_line_follower/drone_line_follower.egg-info/SOURCES.txt'
+[1.127s] running build
+[1.127s] running build_py
+[1.128s] copying drone_line_follower/line_follower_node.py -> /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower
+[1.128s] running install
+[1.135s] running install_lib
+[1.155s] copying /home/bwsi/draft_linefollowing/build/drone_line_follower/build/lib/drone_line_follower/line_follower_node.py -> /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower
+[1.156s] byte-compiling /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower/line_follower_node.py to line_follower_node.cpython-312.pyc
+[1.156s] running install_data
+[1.156s] running install_egg_info
+[1.179s] removing '/home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower-0.0.0-py3.12.egg-info' (and everything under it)
+[1.179s] Copying ../../build/drone_line_follower/drone_line_follower.egg-info to /home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages/drone_line_follower-0.0.0-py3.12.egg-info
+[1.180s] running install_scripts
+[1.306s] writing list of installed files to '/home/bwsi/draft_linefollowing/build/drone_line_follower/install.log'
+[1.333s] Invoked command in '/home/bwsi/draft_linefollowing/src/drone_line_follower' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bwsi/draft_linefollowing/build/drone_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bwsi/draft_linefollowing/install/drone_line_follower/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_line_follower build --build-base /home/bwsi/draft_linefollowing/build/drone_line_follower/build install --record /home/bwsi/draft_linefollowing/build/drone_line_follower/install.log --single-version-externally-managed install_data
