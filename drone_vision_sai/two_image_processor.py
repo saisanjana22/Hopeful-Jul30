@@ -93,11 +93,6 @@ class StandaloneImageProcessor:
         ocv_reg_params = (np.nan, np.nan)
         sp_reg_params = (np.nan, np.nan)
 
-        # Initialize control outputs to default (straight ahead)
-        error = 0.0
-        angular_velocity_z = 0.0
-        linear_velocity_x = self.linear_velocity
-
         if contours:
             largest = max(contours, key=cv2.contourArea)
             min_contour_area = 100
@@ -112,20 +107,12 @@ class StandaloneImageProcessor:
                     ocv_reg_params = self._opencv_regression(points)
                     sp_reg_params = self._scipy_regression(xs, ys)
 
-                    # --- Now, pass the chosen (OpenCV) regression parameters to the external function ---
-                    # We'll calculate control outputs in the main loop after process_image returns
-                # else: print("Contour has too few points for linear regression or invalid shape.")
-            # else: print(f"Largest contour area ({cv2.contourArea(largest)}) too small.")
-        # else: print("No contours found.")
-
-        # Return the mask and all regression params for plotting.
-        # The control outputs (error, angular_vel) will be calculated by the new external function.
         return mask, (my_reg_params, ocv_reg_params, sp_reg_params)
 
 
-# --- NEW STANDALONE FUNCTION FOR DIRECTIONALITY / CONTROL LOGIC ---
+# --- STANDALONE FUNCTION FOR DIRECTIONALITY / CONTROL LOGIC ---
 def calculate_drone_directionality(ocv_m, ocv_b, image_width, image_height,
-                                   kp_angular, linear_velocity, look_ahead_y_ratio=0.9):
+                                   kp_angular, linear_velocity, look_ahead_y_ratio=0.7):
     """
     Converts the OpenCV regression line (slope and intercept) into
     lateral error and angular velocity control signals for a drone.
@@ -143,12 +130,10 @@ def calculate_drone_directionality(ocv_m, ocv_b, image_width, image_height,
         tuple: (error_pixels, linear_velocity_x, angular_velocity_z)
                Returns (0.0, linear_velocity, 0.0) if the line parameters are invalid (NaN/Inf).
     """
-    # Default control outputs if line parameters are invalid
     error_pixels = 0.0
     angular_velocity_z = 0.0
-    linear_velocity_x = linear_velocity # Always maintain forward speed
+    linear_velocity_x = linear_velocity
 
-    # Check for invalid regression line parameters first
     if np.isnan(ocv_m) or np.isnan(ocv_b):
         # print("  Warning: OpenCV regression line resulted in NaN. Defaulting to 0 error.")
         return error_pixels, linear_velocity_x, angular_velocity_z
@@ -156,7 +141,6 @@ def calculate_drone_directionality(ocv_m, ocv_b, image_width, image_height,
     # Calculate the y-coordinate for "look-ahead" in pixels
     look_ahead_y = int(image_height * look_ahead_y_ratio)
 
-    # Calculate the x-position of the chosen regression line at the look-ahead y-coordinate
     if np.isinf(ocv_m):
         # If slope is infinite (vertical line), the x-coordinate is constant.
         # We need an explicit x-value if the slope is infinite.
